@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+  @font-face {
+    font-family: "Circular STD";
+    src: url("../public/fonts/CircularStd-Bold.woff") format("woff");
+  }
+
+  body {
+    font-family: "Inter", sans-serif;
+  }
+
+  h1 {
+    font-family: "Circular STD", sans-serif;
+  }
+}
